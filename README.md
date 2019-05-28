@@ -47,3 +47,30 @@ Password for root@192.168.56.215:
 ... address sizes	: 40 bits physical, 48 bits virtual
 ... power management:
 ```
+
+To use it, my advice is:
+- Create a virtual environment to your application
+```
+$ python3 -m venv ~/.virtualenvs/remote_execution
+```
+- Load the virtual env
+```
+$ source ~/.virtualenvs/remote_execution/bin/activate
+```
+- Install the paramiko module
+```
+$ pip install paramiko
+``` 
+- Download the example
+```
+$ wget https://raw.githubusercontent.com/waldirio/remote_execution/master/demo_simple.py
+```
+- Set the permission
+```
+$ chmod +x demo_simple.py
+```
+- Run it
+```
+(remote_execution) [wpinheir@ironman remote_execution]$ ./demo_simple.py 
+Hostname: 
+```
